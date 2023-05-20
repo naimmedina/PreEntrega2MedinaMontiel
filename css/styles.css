@@ -138,6 +138,7 @@ header {
 #infoot {
   list-style-type: none;
   margin: 10px;
+  padding-right: 20px;
 }
 
 @media (max-width: 425px) {
@@ -263,9 +264,11 @@ header {
 .Bienvenida h2 {
   text-align: center;
   color: #E7E5DF;
+  margin: 10px;
 }
 .Bienvenida p {
   color: #E7E5DF;
+  padding: 10px;
 }
 
 /*section Tips*/
@@ -289,9 +292,10 @@ header {
 }
 .Tips ol {
   margin-top: 10px;
-  padding-left: 20px;
   color: #E7E5DF;
   list-style-type: circle;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bienvenida__imgoso {
@@ -453,6 +457,10 @@ header {
 }
 .nosotros h2 {
   text-align: center;
+  margin: 10px;
+}
+.nosotros p {
+  padding: 10px;
 }
 
 .nosotros__carrusel {
