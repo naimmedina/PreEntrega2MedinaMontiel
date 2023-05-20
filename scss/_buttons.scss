@@ -1,0 +1,101 @@
+/*boton crear tickets*/
+.Bienvenida__button__creartickets-center {
+    text-align: center;
+  }
+
+.Bienvenida__button__creartickets {
+    --glow-color: rgb(52, 149, 129);
+    --glow-spread-color: rgba(38, 108, 94);
+    --enhanced-glow-color: rgb(68, 187, 164);
+    --btn-color: rgb(26, 74, 65);
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    &::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: 0.7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+      }
+    &:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+      }
+    &:active {
+        box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+      }
+  }
+/*boton manuales*/
+#Tips__button__manuales--id {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+.Tips__button__manuales {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #1A4A41;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+    }
+    & span {
+            position: relative;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #E7E5DF;
+    }
+    & svg {
+            position: relative;
+            top: 0;
+            margin-left: 10px;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: #E7E5DF;
+            stroke-width: 2;
+            transform: translateX(-5px);
+            transition: all 0.3s ease;
+    }
+    &:hover:before {
+            width: 100%;
+            background: #1A4A41;
+    }
+    &:hover svg {
+            transform: translateX(0);
+    }
+    &:active {
+            transform: scale(0.95);
+    }
+}

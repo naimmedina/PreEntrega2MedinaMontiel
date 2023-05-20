@@ -1,0 +1,61 @@
+/*section bienvenida*/
+.Bienvenida {
+    & h2 {
+      text-align: center;
+      color: #E7E5DF;
+    }
+    & p {
+      color: #E7E5DF;
+    }
+  }
+  /*section Tips*/
+  .Tips {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    & div {
+      clear: both;
+    }
+    & img {
+      float: left;
+    }
+    & h3 {
+      text-align: start;
+      margin: 0 auto;
+      color: #E7E5DF;
+    }
+    & ol {
+      margin-top: 10px;
+      padding-left: 20px;
+      color: #E7E5DF;
+      list-style-type: circle;
+    }
+  }
+.bienvenida__imgoso {
+    display: none;
+  }
+.bienvenida__imgrobot {
+    display: none;
+  }
+@media (min-width: 768px) {
+  .bienvenida__imgoso {
+    display: flex;
+  }
+}
+@media (min-width: 1400px) {
+  .bienvenida__imgoso {
+    display: none;
+  }
+  .bienvenida__imgrobot {
+    display: flex;
+    margin-top: 350px;
+  }
+}
+@media (min-width: 1900px) {
+.bienvenida__imgrobot {
+  display: flex;
+  margin: auto;
+  }
+}

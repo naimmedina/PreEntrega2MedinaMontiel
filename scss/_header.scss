@@ -1,0 +1,113 @@
+header {
+    background-color: #1A4A41;
+    height: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #E7E5DF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #header__titulo {
+    font-size: 32px;
+  } 
+  .header__enlaces {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+      & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+      }
+      & ul li {
+        margin: 0 10px;
+      }
+      & ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+      }
+  }
+  .header__enlaces__button {
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 2px;
+      width: 0;
+      background-color: #f8f8f8;
+      transition: 0.5s ease;
+  }
+  &:hover::before {
+      width: 100%;
+    }
+  &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 0;
+      width: 100%;
+      background-color: #f8f8f8;
+      transition: 0.4s ease;
+      z-index: -1;
+    }
+  &:hover::after {
+      height: 100%;
+      transition-delay: 0.4s;
+    }
+  }
+  .navbar-brand {
+    color: #E7E5DF;
+  }
+  .offcanvas-heade {
+    color: #E7E5DF;
+  }
+  .offcanvas-title {
+    color: #000000;
+  }
+  .offcanvas-body {
+    background-color: #1A4A41;
+  }
+  .nav-link {
+    color: #E7E5DF;
+  }
+
+  @media (max-width: 1075px) {
+    header {
+      height: 100% auto;
+    }
+    .header__enlaces {
+       display: none;
+    }   
+    #header__titulo {
+      display: none;
+    }
+    .header__enlaces__button {
+      display: none;
+    }
+    .hamburguesa {
+      background-color: #1A4A41;
+    }
+  }
+  @media (min-width: 1075px) {
+    .hamburguesa {
+      display: none;
+    }
+  }
