@@ -261,6 +261,9 @@ header {
 }
 
 /*section bienvenida*/
+.Bienvenida {
+  margin-bottom: 20px;
+}
 .Bienvenida h1 {
   text-align: center;
   color: #E7E5DF;
