@@ -261,7 +261,7 @@ header {
 }
 
 /*section bienvenida*/
-.Bienvenida h2 {
+.Bienvenida h1 {
   text-align: center;
   color: #E7E5DF;
   margin: 10px;
@@ -455,7 +455,7 @@ header {
 .nosotros {
   color: #E7E5DF;
 }
-.nosotros h2 {
+.nosotros h1 {
   text-align: center;
   margin: 10px;
 }
@@ -467,6 +467,54 @@ header {
   margin: 30px;
 }
 
+.contacto_titulo h1 {
+  color: #E7E5DF;
+  text-align: center;
+  margin: 10px;
+}
+
+.contacto {
+  color: #E7E5DF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+.contacto h3 {
+  text-align: center;
+  margin: 10px;
+}
+.contacto .contacto_metodos {
+  max-width: 500px;
+}
+.contacto .contacto_metodos p {
+  margin: 10px;
+}
+.contacto .contacto_metodos .contacto_iconos {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.contacto .contacto_metodos .contacto_iconos i {
+  margin-top: 12px;
+}
+.contacto .contacto_formulario_label {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.contacto .contacto_formulario_label input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body {
   background-color: #000A08;
   font-family: "Open Sans", sans-serif;

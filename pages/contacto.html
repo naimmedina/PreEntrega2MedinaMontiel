@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT|Contacto</title>
+    <meta name="descriptioon" content="Medios de comunicacion con el equipo de IT">
+    <meta name="keywords" content="HTML, IT, SYNAPSIS, USUARIO, INFORMATICA, SOPORTE, CONTACTO">
+    <title>IT comunica|Contacto</title>
     <link rel="icon" type="image/ico" sizes="32x32" href="../img/logitotec.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/44b994f439.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
         <div>
-            <h1><a href="../index.html"><button id="header__titulo" class="header__enlaces__button">IT Comunica</button></a></h1>
+            <h2><a href="../index.html"><button id="header__titulo" class="header__enlaces__button">IT Comunica</button></a></h2>
         </div>
             <div class="header__enlaces"> 
                 <nav>
@@ -58,7 +62,59 @@
               </div>
         </div>    
     </header>
-    <h1 style="color: #E7E5DF;">PROXIMAMENTE...</h1>
+    <section class="contacto_titulo animate__animated animate__backInLeft"><h1><u>Contacto</u></h1></section>
+    <section class="contacto animate__animated animate__backInLeft">
+    <div class="contacto_metodos">
+      <h3>Metodos de contacto</h3>
+      <p>Comunícate con nosotros a través de los siguientes medios o completa el formulario para enviarnos tu consulta:</p>
+      <div class="contacto_iconos">
+        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+        <p>(+598) 2-51238764</p>
+      </div>
+      <div class="contacto_iconos">
+        <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+        <p> naimmedina_27@hotmail.com</p>
+      </div>
+      <div class="contacto_iconos">
+      <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+      <p>(+598) 091234567</p>
+      </div>
+      <div class="contacto_iconos"> 
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <p>@naimmedina.7</p>
+      </div>
+    </div>
+    <div>
+      <h3>Escríbenos</h3>
+      <div>
+      <form class="contacto_formulario_label">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" required>
+          <label for="tel">Telefono</label>
+          <input type="tel" id="tel" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+          <input type="submit" value="enviar">
+      </form>
+      </div>
+    </div>
+    </section>
+    <footer class="Foot">
+      <div id="logosyn">
+          <img src="../img/Synapsis-logo-letra.png" alt="Nombre de la empresa" width="450">
+      </div>
+      <div>
+          <ul id="infoot">
+              <li>Uruguay</li>
+              <li>Paysandú 926</li>
+              <li>CP 11100</li>
+              <li>Montevideo</li>
+              <li>Tel: +598 2902 1477</li>
+          </ul>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
