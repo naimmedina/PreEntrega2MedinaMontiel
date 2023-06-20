@@ -1,5 +1,5 @@
 .notificaciones {
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
     & h1 {
       text-align: center;
       margin: 10px;

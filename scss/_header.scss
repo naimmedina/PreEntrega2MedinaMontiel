@@ -1,9 +1,9 @@
 header {
-    background-color: #1A4A41;
+    background-color: map-get($colors,primary);
     height: 100px;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@ header {
     background: transparent;
     border: none;
     padding: 1em 1.5em;
-    color: #f8f8f8;
+    color: white;
     text-transform: uppercase;
     position: relative;
     transition: 0.5s ease;
@@ -51,7 +51,7 @@ header {
       top: 0;
       height: 2px;
       width: 0;
-      background-color: #f8f8f8;
+      background-color: white;
       transition: 0.5s ease;
   }
   &:hover::before {
@@ -64,7 +64,7 @@ header {
       bottom: 0;
       height: 0;
       width: 100%;
-      background-color: #f8f8f8;
+      background-color: white;
       transition: 0.4s ease;
       z-index: -1;
     }
@@ -74,19 +74,19 @@ header {
     }
   }
   .navbar-brand {
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
   }
   .offcanvas-heade {
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
   }
   .offcanvas-title {
-    color: #000000;
+    color: black;
   }
   .offcanvas-body {
-    background-color: #1A4A41;
+    background-color: map-get($colors,primary);
   }
   .nav-link {
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
   }
 
   @media (max-width: 1075px) {
@@ -103,7 +103,7 @@ header {
       display: none;
     }
     .hamburguesa {
-      background-color: #1A4A41;
+      background-color: map-get($colors,primary);
     }
   }
   @media (min-width: 1075px) {

@@ -3,12 +3,12 @@
   margin-bottom: 20px;
     & h1 {
       text-align: center;
-      color: #E7E5DF;
+      color: map-get($colors,primary-text);
       margin: 10px;
     }
     & p {
-      color: #E7E5DF;
-      padding: 15px;
+      color: map-get($colors,primary-text);
+      padding: 20px;
     }
   }
   /*section Tips*/
@@ -27,11 +27,11 @@
     & h3 {
       text-align: start;
       margin: 0 auto;
-      color: #E7E5DF;
+      color: map-get($colors,primary-text);
     }
     & ol {
       margin-top: 10px;
-      color: #E7E5DF;
+      color: map-get($colors,primary-text);
       list-style-type: circle;
       padding-left: 20px;
       padding-right: 20px;

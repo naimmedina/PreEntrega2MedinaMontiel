@@ -1,12 +1,12 @@
 .contacto_titulo {
     h1{
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
     text-align: center;
         margin: 10px;
     }
 }
 .contacto {
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
     display: flex;
     flex-direction: row;
     justify-content: space-around;

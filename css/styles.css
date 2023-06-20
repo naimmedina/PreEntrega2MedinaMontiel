@@ -1,3 +1,13 @@
+body {
+  background-color: #000A08;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 header {
   background-color: #1A4A41;
   height: 100px;
@@ -42,7 +52,7 @@ header {
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: #f8f8f8;
+  color: white;
   text-transform: uppercase;
   position: relative;
   transition: 0.5s ease;
@@ -55,7 +65,7 @@ header {
   top: 0;
   height: 2px;
   width: 0;
-  background-color: #f8f8f8;
+  background-color: white;
   transition: 0.5s ease;
 }
 .header__enlaces__button:hover::before {
@@ -68,7 +78,7 @@ header {
   bottom: 0;
   height: 0;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: white;
   transition: 0.4s ease;
   z-index: -1;
 }
@@ -86,7 +96,7 @@ header {
 }
 
 .offcanvas-title {
-  color: #000000;
+  color: black;
 }
 
 .offcanvas-body {
@@ -271,7 +281,7 @@ header {
 }
 .Bienvenida p {
   color: #E7E5DF;
-  padding: 15px;
+  padding: 20px;
 }
 
 /*section Tips*/
@@ -463,7 +473,7 @@ header {
   margin: 10px;
 }
 .nosotros p {
-  padding: 15px;
+  padding: 20px;
 }
 
 .nosotros__carrusel {
@@ -794,15 +804,6 @@ header {
   .musica {
     max-width: 300px;
   }
-}
-body {
-  background-color: #000A08;
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 17px;
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

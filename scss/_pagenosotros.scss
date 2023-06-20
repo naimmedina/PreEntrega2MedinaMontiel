@@ -1,11 +1,11 @@
 .nosotros {
-    color: #E7E5DF;
+    color: map-get($colors,primary-text);
     & h1 {
       text-align: center;
       margin: 10px;
     }
     & p {
-      padding: 15px;
+      padding: 20px;
     }
   }
 .nosotros__carrusel {

@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
-    background-color: #E7E5DF;
+    background-color: map-get($colors,primary-text);
     padding: 20px;
     border-radius: 20px;
     position: relative;
@@ -17,7 +17,7 @@
   
   .title {
     font-size: 28px;
-    color: #1A4A41;
+    color: map-get($colors,primary);
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
@@ -31,12 +31,12 @@
         width: 16px;
         border-radius: 50%;
         left: 0px;
-        background-color: #1A4A41;
+        background-color: map-get($colors,primary);
     }
     &::before {
         width: 18px;
         height: 18px;
-        background-color: #1A4A41;
+        background-color: map-get($colors,primary);
     }
     &::after {
         width: 18px;
@@ -102,7 +102,7 @@
   .submit {
     border: none;
     outline: none;
-    background-color: #1A4A41;
+    background-color: map-get($colors,primary);
     padding: 10px;
     border-radius: 10px;
     color: #fff;
